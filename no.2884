@@ -1,0 +1,17 @@
+# Prompt the user the time
+hour, minute = map(int, input().split())
+
+# Subtract 45minutes from the prompted time
+if hour < 1: 
+    if (minute - 45) < 0:
+        # Print the time of the day before
+        hour = 23
+        print(hour, 60 - (45 - minute))
+    else:
+        print(hour, minute - 45)
+else:
+    if (minute - 45) < 0:
+        hour -= 1
+        print(hour, 60 - (45 - minute))
+    else:
+        print(hour, minute - 45)
