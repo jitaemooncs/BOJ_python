@@ -1,0 +1,6 @@
+# Prompt the user
+number = int(input())
+
+# Make times table
+for i in range(1, 10):
+    print("{} * {} = {}".format(number, i, number * i))
